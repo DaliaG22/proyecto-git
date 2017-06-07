@@ -1,0 +1,567 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplicacion 10 "Proyecto" </title>
+
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app10.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+</head><body onLoad="MM_preloadImages('imagenes/img8.jpg','imagenes/descarga.jpg','imagenes/img5.jpg','imagenes/img1.jpg','imagenes/cuidado2.jpg','imagenes/extinto2.jpg','imagenes/bio1.jpg','imagenes/bio2.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+    <div data-role ="header" data-add-back-btn="true" data-back-btn-text="Regresar"  data-back-btn-theme="a">
+      <h1>PLANETA TIERRA</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+    </div>
+<br>
+     <div>
+      <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/alto.jpg" alt="alto" title="alto" id="wows1_0"/></li>
+		<li><img src="data1/images/concienciaecologiacasaludtaoista.jpg" alt="conciencia-ecologiaca-salud-taoista" title="conciencia-ecologiaca-salud-taoista" id="wows1_1"/></li>
+		<li><img src="data1/images/dia_de_la_tierra.jpg" alt="dia de la tierra" title="dia de la tierra" id="wows1_2"/></li>
+		<li><img src="data1/images/img2.jpg" alt="img2" title="img2" id="wows1_3"/></li>
+		<li><img src="data1/images/img4.jpg" alt="img4" title="img4" id="wows1_4"/></li>
+		<li><img src="data1/images/img5.jpg" alt="img5" title="img5" id="wows1_5"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/img23.jpg" alt="wowslider.net" title="img23" id="wows1_6"/></a></li>
+		<li><img src="data1/images/img24.jpg" alt="img24" title="img24" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="alto"><span><img src="data1/tooltips/alto.jpg" alt="alto"/>1</span></a>
+		<a href="#" title="conciencia-ecologiaca-salud-taoista"><span><img src="data1/tooltips/concienciaecologiacasaludtaoista.jpg" alt="conciencia-ecologiaca-salud-taoista"/>2</span></a>
+		<a href="#" title="dia de la tierra"><span><img src="data1/tooltips/dia_de_la_tierra.jpg" alt="dia de la tierra"/>3</span></a>
+		<a href="#" title="img2"><span><img src="data1/tooltips/img2.jpg" alt="img2"/>4</span></a>
+		<a href="#" title="img4"><span><img src="data1/tooltips/img4.jpg" alt="img4"/>5</span></a>
+		<a href="#" title="img5"><span><img src="data1/tooltips/img5.jpg" alt="img5"/>6</span></a>
+		<a href="#" title="img23"><span><img src="data1/tooltips/img23.jpg" alt="img23"/>7</span></a>
+		<a href="#" title="img24"><span><img src="data1/tooltips/img24.jpg" alt="img24"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">image slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-b">
+       <li class="ui-first-child ui-last-child">
+          <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>DIA MUNDIAL DE LA TIERRA</h2>
+          </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+          <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>DIA INTERNACIONAL DE LA BIODIVERSIDAD</h2>
+          </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+         <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>CONCIENCIA ECOLÓGICA</h2>
+         </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+          <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>CALENTAMIENTO GLOBAL</h2>
+          </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+          <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>INICIATIVAS DEL CUIDADO AL MEDIO AMBIENTE</h2>
+          </a>
+       </li>
+        <li class="ui-first-child ui-last-child">
+          <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>ESPECIES EN PELIGRO DE EXTINCION A CAUSA DEL CALENTAMIENTO GLOBAL</h2>
+          </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+         <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>ESPECIES EXTINTAS A CAUSA DE LA CONTAMINACION</h2>
+         </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+         <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>DATOS DEL DESARROLLADOR</h2>
+         </a>
+       </li>
+     </ul>
+    
+    
+     
+     </div>
+     <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+        <div> 
+        <h4> ¡Cuidemos el Planeta! </h4>
+          <img src="res/android/mdpi.png" width="32" height="32">
+        </div>
+        <div>
+            <h4>Rosa Dalia Garcia Montes</h4>
+        </div>
+     </div>
+</div>
+ 
+ 
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+       <h1>Dia Mundial de la Tierra</h1>
+      </div>
+      <center>
+  <img src="imagenes/img21.jpg" width="544" height="393">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>22 de Abril  </h1>
+         <p> El 22 de abril de cada año se celebra el nacimiento del movimiento ambientalista moderno, el cual se inició en 1970 cuando 20 millones de norteamericanos tomaron las calles, los parques y los auditorios para manifestarse por un ambiente saludable y sustentable
+
+El Día de la Tierra de 1970 logró una coincidencia política que parecía imposible. Ese día condujo a la creación de la Agencia de Protección al Medio Ambiente de Estados Unidos y a la aprobación de leyes relacionadas con el aire limpio, el agua limpia y la conservación de especies en peligro de extincion. A partir de entonces, cada año en esta fecha, el mundo entero reflexiona y se moviliza por una Tierra mejor
+ <div>
+ <img src="imagenes/dia de la tierra.jpg"> 
+ </div>
+</div>
+  
+<div data-role="collapsible" data-content-theme="false">
+    <h1>La importancia de cuidar nuestro Planeta Tierra</h1>
+         <p> Un llamado de atención sobre la necesidad de disciplinar nuestro consumo para proteger al planeta para las próximas generaciones, pues en pocos años se duplicará la actual población de la Tierra, sin que pueda ampliar significativamente la capacidad de producción agrícola.
+
+Para entender científicamente el por qué debemos cuidar el planeta es necesario tomar en cuenta datos estadísticos y aritméticos que son sumamente importantes. </p> 
+<div>
+  <img src="imagenes/img13.jpg">
+</div>
+</div>
+
+<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+<li class="ui-first-child ui-last-child">
+<a href="http://www.un.org/es/events/motherearthday/" data-role="button">
+<h1> Dia de la tierra ONU</h1>
+</a>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+<li class="ui-first-child ui-last-child">
+<a href="https://www.diariolibre.com/noticias/por-qu-debemos-cuidar-el-planeta-BIDL337226" data-role="button">
+<h1> Importancia de  cuidar la tierra</h1>
+</a>
+</li>
+</ul>
+</div>
+</div>
+
+<br>
+<br>
+
+<div data-role="footer" data-theme="a" data-position="fixed">
+    <div>
+    <h4> ¡Cuidemos el Planeta!
+     <center><img src="res/android/mdpi.png" width="32" height="32"></center>
+     </div>
+        <h4> Rosa Dalia Garcia Montes </h4>
+    </div>
+</div>  
+    
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+         <h1>Dia Internacional de la Biodiversidad</h1>
+      </div> 
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image61','','imagenes/bio2.jpg',1)"><img src="imagenes/bio1.jpg" width="300" height="300" id="Image61"></a>
+<div data-role="content" align="center">
+     <div data-role="collapsible" data-content-theme="false">
+         <h1>Dia internacional de la Biodiversidad </h1>
+        <p> Las Naciones Unidas proclamaron el 22 de mayo como día Internacional de la Diversidad Biológica, fecha que es celebrada en Venezuela con un honroso décimo lugar en todo el planeta, con la mayor variedad de animales, plantas y ecosistemas.
+
+El 19 de diciembre de 1994, la Asamblea General proclamó el 29 de diciembre, fecha de entrada en vigor del Convenio sobre la Diversidad Biológica, Día Internacional de la Diversidad Biológica (resolución 49/119). La Conferencia de las Partes en el Convenio, celebrada en Nassau en 1994, había recomendado la designación de ese Día. Posteriormente se cambió la fecha al 22 de mayo, como conmemoración de la firma de la Convención sobre Diversidad Biológica. </p>
+  
+  
+        
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','imagenes/img8.jpg',1)"><img src="imagenes/img9.jpg" width="616" height="476" id="Image11"></a></div>
+  <br>
+  
+  
+   <div data-role="collapsible" data-content-theme="false">
+         <h1>¿A que se refiere la Biodiversidad? </h1>
+        <p> La biodiversidad o diversidad biológica es la variedad de la vida. Este reciente concepto incluye varios niveles de la organización biológica. Abarca a la diversidad de especies de plantas, animales, hongos y microorganismos que viven en un espacio determinado, a su variabilidad genética, a los ecosistemas de los cuales forman parte estas especies y a los paisajes o regiones en donde se ubican los ecosistemas. También incluye los procesos ecológicos y evolutivos que se dan a nivel de genes, especies, ecosistemas y paisajes. </p>
+        <div> 
+      <img src="imagenes/bio3.jpg"> 
+      <div>
+      <img src="imagenes/bio23..jpg">
+       </div>
+       </div>
+       </div>
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+<li class="ui-first-child ui-last-child">
+<a href="http://www.un.org/es/events/biodiversityday/background.shtml" data-role="button">
+<h2> Biodiversidad </h2>
+</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+<li class="ui-first-child ui-last-child">
+<a href="http://www.biodiversidad.gob.mx/biodiversidad/que_es.html" data-role="button">
+<h2> ¿Que es la Biodiversidad? </h2>
+</a>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div data-role="footer" data-theme="a" data-position="fixed">
+    <div>
+    <h4> ¡Cuidemos el Planeta!
+     <center><img src="res/android/mdpi.png" width="32" height="32"></center>
+     </div>
+        <h4> Rosa Dalia Garcia Montes </h4>
+      </div>
+</div>
+</div>
+    
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+         <h1>CONCIENCIA ECOLÓGICA</h1>
+      </div> 
+      <img src="imagenes/img25.jpg"> 
+      
+<div data-role="content" align="center">
+      <div data-role="collapsible" data-content-theme="false">
+         <h1>Conciencia Ecológica</h1>
+         <p>conciencia ecológica es entender que somos dependientes de la naturaleza y responsables por su estado de conservación. Ignorar esta verdad equivale a autodestruirnos, porque al degradar el medio ambiente estamos empeorando nuestra calidad de vida y poniendo en peligro el futuro de nuestros descendientes.
+
+Al contrario de lo que se podría pensar, desarrollo económico y conciencia ecológica no tienen por qué ser antónimos. Se puede producir de manera sustentable, fomentar la generación de energías limpias, reducir y reciclar la basura y reutilizar un gran número de materiales que producirán nuevos productos útiles para el día a día del hombre moderno.
+
+Es cierto que la conciencia ecológica debe comenzar en el seno del hogar, pero debe extenderse a todos los ámbitos de nuestra existencia: simplemente porque todas nuestras acciones inciden -de manera positiva o negativa- sobre la naturaleza.
+</p>
+
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image33','','imagenes/descarga.jpg',1)"><img src="imagenes/conciencia-ecologiaca-salud-taoista.jpg" width="403" height="403" id="Image33"></a></div>
+      </div>
+<br>
+
+
+ <div data-role="collapsible" data-content-theme="false">
+         <h1>Como generar conciencia ecologica en los jovenes </h1>
+         <p>Infundir respeto por el medio ambiente a las generaciones más jóvenes es una obligación moral de los mayores, de la sociedad en general, ya sea en forma de políticas como mediante la enseñanza en los colegios o con el ejemplo en su entorno más próximo. No en vano, ellos son el futuro y de esa transmisión de valores dependerá el futuro del planeta.
+¿Pero, cómo hacerlo? Generar conciencia ecológica en los jóvenes va más allá de campañas puntuales que inviten a reciclar o de declaraciones en favor del medio ambiente de boca de sus ídolos. Aunque todo ayuda, en realidad sólo una educación que empiece en la más tierna infancia logrará el objetivo: que sean ciudadanos informados, con espíritu crítico, porque sólo entendiendo y amando a la naturaleza se contribuirá a su preservación.
+</p>
+<div>
+<img src="imagenes/conciencia11.jpg"><img src="imagenes/jaja.jpg" width="490" height="275">
+<div></div>
+</div>
+</div>
+<br>
+
+
+<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+<li class="ui-first-child ui-last-child">
+<a href="http://www.iepe.org/2013/11/el-despertar-de-la-conciencia-ecologica-internacional/" data-role="button">
+<h2> Conciencia Ecológica </h2>
+</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+<li class="ui-first-child ui-last-child">
+<a href="https://www.ecologiaverde.com/conciencia-ecologica/" data-role="button">
+<h2>Conoce ejemplos de </h2>
+<h2> Conciencia Ecológica </h2>
+</a>
+</li>
+</ul>
+</div>
+</div>
+
+
+
+<div data-role="footer" data-theme="a" data-position="fixed">
+    <div>
+    <center> <h4> ¡Cuidemos el planeta! </h4> </center>
+      <center> <img src="res/android/mdpi.png" width="32" height="32"> </center>
+    </div>
+        <h4>Rosa Dalia Garcia Montes</h4>
+  </div>
+</DIV>
+</div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+         <h1>Calentamiento Global</h1>
+      </div>
+  <center> <img src="imagenes/img18.jpg" width="798" height="300"> </center>
+  <div data-role="content" align="center">
+      <div data-role="collapsible" data-content-theme="false">
+         <h1>Calentamiento Global</h1>
+         <p>El calentamiento global permite referirse a dos cuestiones relacionadas: por un lado, se trata de un fenómeno observado en el promedio de la temperatura de las últimas décadas, que sube de manera sostenida; por otra parte, es una teoría que, a partir de distintas proyecciones, sostiene que la temperatura seguirá creciendo en el futuro a causa de la acción del hombre.
+ </p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image34','','imagenes/img5.jpg',1)"><img src="imagenes/img14.jpg" width="325" height="289" id="Image34"></a>
+      </div>
+     
+  </div>
+<br>
+
+ <div data-role="collapsible" data-content-theme="false">
+         <h1>¿Por que se origina el calentamiento global?</h1>
+         <p>Es producido por las emisiones de gases como dióxido de carbono principalmente y se acumulan en la capa de ozono produciendo un aumento de temperatura considerable. Tal y como sucede en el efecto invernadero, pero a todas estas ¿sabemos que es el efecto invernadero?
+El Efecto Invernadero: es un fenómeno natural que ha desarrollado la tierra para permitir que exista la vida.
+El planeta está cubierto por una capa de gases (Atmósfera); ésta permite la entrada de algunos rayos solares que calientan la tierra. Ésta al calentarse emite calor pero esta vez la atmósfera impide que se escape todo hacia el espacio y lo devuelve a la superficie terrestre.
+ </p>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image38','','imagenes/img1.jpg',1)"><img src="imagenes/jeje.jpg" width="149" height="226" id="Image38"></a><br>
+
+ </div>
+ 
+
+
+<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+<li class="ui-first-child ui-last-child">
+<a href="http://www.nationalgeographic.es/medio-ambiente/que-es-el-calentamiento-global" data-role="button">
+<h2> Calentamiento Global </h2>
+</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+<li class="ui-first-child ui-last-child">
+<a href="http://www.areaciencias.com/fisica/calentamiento-global.html" data-role="button">
+<h2> Como se origina el Calentamiento Global </h2>
+</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div data-role="footer" data-theme="a" data-position="fixed">
+    <div>
+    <center> <h4> ¡Cuidemos el planeta! </h4> </center>
+      <center> <img src="res/android/mdpi.png" width="32" height="32"> </center>
+    </div>
+        <h4>Rosa Dalia Garcia Montes</h4>
+  </div>
+  </div>
+  
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+         <h1>Iniciativas para cuidar el medio ambiente</h1>
+      </div> 
+       <img src="imagenes/img12.jpg" width="281" height="225">
+      
+<div data-role="content" align="center">
+      <div data-role="collapsible" data-content-theme="false">
+         <h1>Iniciativas para cuidar el el medio ambiente</h1>
+         <p> 1.-Aproveche al máximo la luz del Sol para evitar el consumo innecesario y excesivo de la energía eléctrica. </p>
+<p>2.-No utilice manguera para regar las plantas o lavar su auto. Es mejor usar un balde para controlar el consumo de agua, elemento vital que muchas personas necesitan en el todo el mundo.</p>
+<p>3.-No deje encendidos los artefactos eléctricos que no utilice. Con ello se ahorra mucha energía.</p>
+<p>4.-Use pilas, baterías o artículos que se recarguen solo con energía solar.</p>
+<p>5.-Evite los viajes en auto. Andar en bicicleta o caminar le ayudará a estar más saludable y además contribuirá en el cuidado del medio ambiente.</p>
+<p>6.-Elija las bolsas de papel o de tela, no las de plástico que son contaminantes.</p>
+<p>7.-Recicle. Es una de las formas más fáciles de combatir el calentamiento global y el efecto invernadero.</p>
+<p>8.-Plante árboles en su jardín y en su comunidad. Estos absorben las emisiones de dióxido de carbono, reduciendo los efectos del calentamiento global.</p>
+<p>9.-Sus desechos orgánicos deposítelos en la tierra y no en los tachos de basura. De esa manera puede producir abono.</p>
+<p>10.-Si tiene jardín en casa, deje de usar pesticidas, mejor reemplácelos con productos naturales.
+</p>
+
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image66','','imagenes/cuidado2.jpg',1)"><img src="imagenes/cuidado1.jpg" width="281" height="225" id="Image66"></a></div>
+      </div>
+<br>
+<div data-role="footer" data-theme="a" data-position="fixed">
+    <div>
+    <center> <h4> ¡Cuidemos el planeta! </h4> </center>
+      <center> <img src="res/android/mdpi.png" width="32" height="32"> </center>
+    </div>
+        <h4>Rosa Dalia Garcia Montes</h4>
+  </div>
+</DIV>
+</div>
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+         <h1>Especies en peligro de extincion</h1>
+      </div> 
+      
+<DIV data-role="content" align="center">
+         <h1>Especies en peligro de extincion a causa del mal cuidado del ambiente </h1>
+        <p> 1.- Oso Polar
+Cada año es más grande el porcentaje de reducción del hielo en el Ártico, hábitat de los osos polares. Si continúan derritiéndose las capas de hielo (aproximadamente en el 2013) los osos polares desaparecerán dentro de 75 años. </p>
+<p> 2.- Tortugas Marinas
+La contaminación de los mares y el desarrollo turístico y urbano en las playas en donde las tortugas anidan son algunas de las causas que anticipan la extinción de esta especie. Además, el cambio climático produce catástrofes naturales como las mareas que destruyen el hábitat de este animal.</p>
+<p>3.- Tigre de Bengala
+Se prevé que para el 2060 el hábitat de estos animales estará destruído y como consecuencia desaparecerán el 70% de los Tigres de Bengala. Por otra parte, la comercialización indiscriminada de esta especie en países como China es otro factor importante de la extinción de estos animales.</p>
+<p>4.-Pingüino
+El deshielo en la Antártica también será la causa de extinción de los pingüinos, para algunos científicos en el 2100. El hielo marítimo es esencial para la vida del pingüino emperador, en el protegen a sus crías, es la fuente de su alimentación y el lugar en donde mudan de plumas.</p> 
+<p>5.-La Ballena
+Las ballenas están en continua amenaza. Como una consecuencia del cambio climático las rutas migratorias de las ballenas son alteradas por las variaciones de la temperatura del océano. Esto hace que algunas se pierdan en mar abierto o transiten por zonas desconocidas.</p>
+<p> 6.-Canguro
+El incremento de la temperatura y la sequía por falta de lluvia son las consecuencias del cambio climático que afrontará el único hábitat de estos animales. Las altas temperaturas producen incendios forestales que acaban con gran parte de las especies salvajes.</p>
+<p>7.-Elefante
+Las razones de la desaparición del elefante son, también, la deforestación y la agricultura que destruyen totalmente sus ecosistemas y sus fuentes de alimento.</p>
+<p>8.-Albatros
+Esta hermosa ave está fuertemente afectada por la contaminación de los mares y la pesca marítima, porque sus patas se enredan con los anzuelos, de esta forma mueren cada año cerca de 100.000 aves</p>
+<p> 9.-Orangután
+Ya quedan pocos orangutanes en Indonesia y Malasia. Este es el mono con mayor riesgo de extinción del mundo por causa de la deforestación, la agricultura y los incendios forestales que arrasan totalmente con su hábitat. </p>
+<p>10.- Los Corales
+El hombre ha usado los corales para decoración y joyería desde hace 5.000 años. La pesca y el turismo han deteriorado gran parte de la barrera coralina. Se pronostica que dentro de unas décadas habrá desaparecido el 80% de los corales del océano.
+</p>
+
+        
+       
+  <br>
+  
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container2">
+<div class="ws_images"><ul>
+		<li><img src="data2/images/extincion1.jpg" alt="extincion1" title="extincion1" id="wows2_0"/></li>
+		<li><img src="data2/images/extincion2.jpg" alt="extincion2" title="extincion2" id="wows2_1"/></li>
+		<li><img src="data2/images/extincion3.jpg" alt="extincion3" title="extincion3" id="wows2_2"/></li>
+		<li><img src="data2/images/extincion_4.jpg" alt="extincion 4" title="extincion 4" id="wows2_3"/></li>
+		<li><img src="data2/images/extincion_5.jpg" alt="extincion 5" title="extincion 5" id="wows2_4"/></li>
+		<li><img src="data2/images/extincion6.jpg" alt="extincion6" title="extincion6" id="wows2_5"/></li>
+		<li><img src="data2/images/extincion7.jpg" alt="extincion7" title="extincion7" id="wows2_6"/></li>
+		<li><img src="data2/images/extincion8.jpg" alt="extincion8" title="extincion8" id="wows2_7"/></li>
+		<li><a href="http://wowslider.com"><img src="data2/images/extincion9.jpg" alt="wowslider" title="extincion9" id="wows2_8"/></a></li>
+		<li><img src="data2/images/extincion10.jpg" alt="extincion10" title="extincion10" id="wows2_9"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="extincion1"><span><img src="data2/tooltips/extincion1.jpg" alt="extincion1"/>1</span></a>
+		<a href="#" title="extincion2"><span><img src="data2/tooltips/extincion2.jpg" alt="extincion2"/>2</span></a>
+		<a href="#" title="extincion3"><span><img src="data2/tooltips/extincion3.jpg" alt="extincion3"/>3</span></a>
+		<a href="#" title="extincion 4"><span><img src="data2/tooltips/extincion_4.jpg" alt="extincion 4"/>4</span></a>
+		<a href="#" title="extincion 5"><span><img src="data2/tooltips/extincion_5.jpg" alt="extincion 5"/>5</span></a>
+		<a href="#" title="extincion6"><span><img src="data2/tooltips/extincion6.jpg" alt="extincion6"/>6</span></a>
+		<a href="#" title="extincion7"><span><img src="data2/tooltips/extincion7.jpg" alt="extincion7"/>7</span></a>
+		<a href="#" title="extincion8"><span><img src="data2/tooltips/extincion8.jpg" alt="extincion8"/>8</span></a>
+		<a href="#" title="extincion9"><span><img src="data2/tooltips/extincion9.jpg" alt="extincion9"/>9</span></a>
+		<a href="#" title="extincion10"><span><img src="data2/tooltips/extincion10.jpg" alt="extincion10"/>10</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+<div data-role="footer" data-theme="a" data-position="fixed">
+    <div>
+    <h4> ¡Cuidemos el Planeta!
+     <center><img src="res/android/mdpi.png" width="32" height="32"></center>
+     </div>
+        <h4> Rosa Dalia Garcia Montes </h4>
+      </div>
+</DIV>
+</div>
+</div>
+</div>
+    
+    
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+         <h1>Especies exitintas a causa de la contaminacion </h1>
+      </div> 
+      <img src="imagenes/extinto3.jpg"> 
+      
+<div data-role="content" align="center">
+         <p>
+1.-DELFIN DE RIO CHINO O BAIJI</p>
+<p>El animal pertenecía a una rara especie de delfín de agua dulce conocida localmente como baiji. Una expedición en el 2007 que buscaba al baiji, conformada por 30 científicos de Japón, China, Suiza y Estados Unidos, quienes contaban con dos barcos para realizar la labor, no pudieron localizar ningún especimen. Extinto en 2006 </p>
+<p>2.-TIGRE DEL CASPIO</p>
+<p>El tigre del Caspio, es una subespecie de tigre. Su área de distribución original abarcaba la península de Anatolia, el Cáucaso, el Kurdistán, norte de Irak e Irán, Afganistán y gran parte de Asia Central hasta Mongolia.
+En 1970 se mató un ejemplar en Uludure. Un botánico que trabajaba en la zona llegó a fotografiar la piel del animal en 1972, al que se juzgó joven (y por tanto indicio de la presencia de otros ejemplares maduros) según la distribución de sus rayas. Sin embargo, las distintas expediciones de científicos turcos a la zona no han conseguido dar con ningún ejemplar vivo, a pesar de que varios civiles y militares destacados en la frontera con Irak y Siria han afirmado haber visto ejemplares en la zona en alguna ocasión.
+EXTINTO: 1980. </p>
+<p> 3.-PATO DE LAS MARIANAS</p>
+<p>El pato de las Marianas es un miembro extinto del género Anas que habitaba en las islas Marianas. Extinto: 1981 </p>
+
+</p>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image62','','imagenes/extinto2.jpg',1)"><img src="imagenes/extinto1.jpg" width="600" height="320" id="Image62"></a> </div>
+   
+<div data-role="footer" data-theme="a" data-position="fixed">
+    <div>
+     <center> <h4> ¡Cuidemos el Planeta! </h4> </center>
+     <center><img src="res/android/mdpi.png" width="32" height="32"></center>
+     </div>
+        <h4> Rosa Dalia Garcia Montes </h4>
+      </div>
+</DIV>
+</div>
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+         <h1>DATOS DEL DESARROLLADOR: </h1>
+         
+<div data-role="content" align="center">
+     <p> Nombre: Rosa Dalia Garcia Montes </p>
+     <p> Grupo: "E" Semestre: 4° </p>
+     <p> Submodulo: Desarrolla Aplicaciones Moviles </p>
+     <p> Docente: Lic. Jose Antonio Gomez Hernandez </p>
+    
+<div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+    <div>
+    <center> <h4> ¡Cuidemos el planeta! </h4> </center>
+      <center> <img src="res/android/mdpi.png" width="32" height="32"> </center>
+      </div>
+</DIV>
+</div>
+</div>  
+</body>
+</html>
